@@ -1,33 +1,36 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# --- Build Files ---
+/target/
+/build/
+*.jar
+*.war
+*.ear
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# --- IDE Files ---
+.idea/
 *.iml
-*.ipr
+*.iws
+.project
+.classpath
+.settings/
+/nbproject/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
 
-### VS Code ###
-.vscode/
+# --- Log Files ---
+*.log
+logs/
+
+# --- Sensitive Configuration ---
+# Exclude your properties file to protect your password!
+src/main/resources/application.properties
+
+
+### Your Git Workflow
+
+Now that you have the `.gitignore` file, here are the commands to run in your terminal (from the project's root directory) to push your code.
+
+**Step 1: Initialize Git (if you haven't already)**
+*Run this only if you don't see a `.git` folder.*
+```sh
